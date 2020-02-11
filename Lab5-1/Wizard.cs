@@ -15,7 +15,7 @@ namespace Lab5_1
 
         public override string Play()
         {
-            return base.Play() + $" {spellNumber}";
+            return base.Play() + $", {spellNumber} spells";
         }
 
         public int SpellNumber { get => spellNumber; set => spellNumber = value; }

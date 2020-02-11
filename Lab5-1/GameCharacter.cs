@@ -19,7 +19,7 @@ namespace Lab5_1
 
         public virtual string Play()
         {
-            return $"{name} (int {intelligence}";
+            return $"{name} - strength: {strength}, int: {intelligence},";
         }
 
         public string Name { get => name; set => name = value; }

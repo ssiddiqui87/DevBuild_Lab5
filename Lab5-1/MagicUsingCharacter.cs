@@ -15,7 +15,7 @@ namespace Lab5_1
 
         public override string Play()
         {
-            return base.Play() + $" {magicalEnergy}";
+            return base.Play() + $" magic: {magicalEnergy}";
         }
 
         public int MagicalEnergy { get => magicalEnergy; set => magicalEnergy = value; }

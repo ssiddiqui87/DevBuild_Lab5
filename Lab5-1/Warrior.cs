@@ -15,7 +15,7 @@ namespace Lab5_1
 
         public override string Play()
         {
-            return base.Play() + $" {weaponType}";
+            return base.Play() + $" weapon: {weaponType}";
         }
 
         public string WeaponType { get => weaponType; set => weaponType = value; }

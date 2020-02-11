@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ssiddiqui\\source\\repos\\Lab5-1\\Lab5-1.csproj",
+      "projectUniqueName": "C:\\Users\\ssiddiqui\\OneDrive - KNEX\\Desktop\\devbuild\\Grand Circus\\Week 5 - OOP Continued\\Labs\\Lab5-1\\Lab5-1.csproj",
       "projectName": "Lab5-1",
-      "projectPath": "C:\\Users\\ssiddiqui\\source\\repos\\Lab5-1\\Lab5-1.csproj",
+      "projectPath": "C:\\Users\\ssiddiqui\\OneDrive - KNEX\\Desktop\\devbuild\\Grand Circus\\Week 5 - OOP Continued\\Labs\\Lab5-1\\Lab5-1.csproj",
       "packagesPath": "C:\\Users\\ssiddiqui\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ssiddiqui\\source\\repos\\Lab5-1\\obj\\",
+      "outputPath": "C:\\Users\\ssiddiqui\\OneDrive - KNEX\\Desktop\\devbuild\\Grand Circus\\Week 5 - OOP Continued\\Labs\\Lab5-1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
