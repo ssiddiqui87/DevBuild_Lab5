@@ -10,7 +10,14 @@ namespace Lab5_1
 
         public Wizard(string name, int strength, int intelligence, int magicalEnergy, int spellNumber) : base(name, strength, intelligence, magicalEnergy)
         {
-            this.spellNumber = spellNumber;
+            this.SpellNumber = spellNumber;
         }
+
+        public override string Play()
+        {
+            return base.Play() + $" {spellNumber}";
+        }
+
+        public int SpellNumber { get => spellNumber; set => spellNumber = value; }
     }
 }

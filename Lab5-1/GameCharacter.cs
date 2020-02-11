@@ -17,6 +17,11 @@ namespace Lab5_1
             this.Intelligence = intelligence;
         }
 
+        public virtual string Play()
+        {
+            return $"{name} (int {intelligence}";
+        }
+
         public string Name { get => name; set => name = value; }
         public int Strength { get => strength; set => strength = value; }
         public int Intelligence { get => intelligence; set => intelligence = value; }

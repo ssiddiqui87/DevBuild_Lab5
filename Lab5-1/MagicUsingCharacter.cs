@@ -13,6 +13,11 @@ namespace Lab5_1
             this.MagicalEnergy = magicalEnergy;
         }
 
+        public override string Play()
+        {
+            return base.Play() + $" {magicalEnergy}";
+        }
+
         public int MagicalEnergy { get => magicalEnergy; set => magicalEnergy = value; }
     }
 }

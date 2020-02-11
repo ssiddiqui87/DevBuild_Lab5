@@ -13,6 +13,11 @@ namespace Lab5_1
             this.WeaponType = weaponType;
         }
 
+        public override string Play()
+        {
+            return base.Play() + $" {weaponType}";
+        }
+
         public string WeaponType { get => weaponType; set => weaponType = value; }
     }
 }
