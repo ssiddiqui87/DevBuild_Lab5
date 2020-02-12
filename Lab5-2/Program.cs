@@ -24,8 +24,9 @@ namespace Lab5_2
                 int winner;
                 if (inputPlayer == "dj")
                 {
-                    DwayneJohnson rock = new DwayneJohnson("rock");
+                    DwayneJohnson rock = new DwayneJohnson(inputPlayer);
                     int rockSelection = (int)rock.GenerateRoshambo();
+                    Console.WriteLine(rock.Name);
                     winner = CheckWinner(humanSelection, rockSelection);
                     Console.WriteLine($"You selected: {(Roshambo)humanSelection}\nDwayne Johnson, of course, selected: The Rock");
                     if (winner == 1)
@@ -45,7 +46,7 @@ namespace Lab5_2
                 else if (inputPlayer == "kh")
                 {
 
-                    KevinHart kh = new KevinHart("kh");
+                    KevinHart kh = new KevinHart(inputPlayer);
                     int khSelection = (int)kh.GenerateRoshambo();
                     winner = CheckWinner(humanSelection, khSelection);
                     Console.WriteLine($"You selected: {(Roshambo)humanSelection}\nKevin Hart chose: {(Roshambo)khSelection}");

@@ -14,7 +14,11 @@ namespace Lab5_2
         {
             Console.Write("Rock, paper or scissors? ");
             string input = Console.ReadLine().ToLower();
-
+            while (input != "rock" && input != "paper" && input != "scissors")
+            {
+                Console.Write("That is not a valid entry. Please rock, paper, or scissors: ");
+                input = Console.ReadLine();
+            }
             if (input == "rock")
             {
                 return Roshambo.Rock;

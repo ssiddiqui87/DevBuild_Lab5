@@ -9,7 +9,7 @@ namespace Lab5_2
 
         public DwayneJohnson(string name) : base(name) 
         {
-          
+            name = "Dwayne Johnson";
         }
         public override Roshambo GenerateRoshambo()
         {
