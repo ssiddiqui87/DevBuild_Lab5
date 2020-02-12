@@ -7,16 +7,20 @@ namespace Lab5_2
     abstract class Player
     {
         private string name;
-        private int value;
+        private Roshambo value;
 
-        public Player(string name, int value)
+        public Player(string name, Roshambo value)
         {
             this.Name = name;
             this.Value = value;
         }
+        public Player(string name)
+        {
+            this.Name = name;
+        }
 
         public string Name { get => name; set => name = value; }
-        public int Value { get => value; set => this.value = value; }
+        public Roshambo Value { get => value; set => this.value = value; }
 
         public abstract Roshambo GenerateRoshambo();
     }

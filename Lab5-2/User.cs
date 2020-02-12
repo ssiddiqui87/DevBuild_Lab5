@@ -6,7 +6,7 @@ namespace Lab5_2
 {
     class User : Player
     {
-        public User(string name, int value) : base(name, value)
+        public User(string name) : base(name)
         {
             
         }

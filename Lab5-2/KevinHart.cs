@@ -6,17 +6,15 @@ namespace Lab5_2
 {
     class KevinHart : Player
     {
-        public KevinHart(string name, int value) : base(name, value)
+        public KevinHart(string name) : base(name)
         {
             
         }
         public override Roshambo GenerateRoshambo()
         {
             Random random = new Random();
-          
-
-            Roshambo roshambo = (Roshambo)(random.Next(0, 3));
-            return roshambo;
+           // Roshambo roshambo = (Roshambo)(random.Next(0, 3));
+            return (Roshambo)random.Next(0, 3);
         }
     }
 }
