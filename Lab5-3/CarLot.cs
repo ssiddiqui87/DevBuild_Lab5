@@ -56,10 +56,19 @@ namespace Lab5_3
         {
             Console.WriteLine("Do you want to search for \n1. Make" +
                 "\n2. Year" +
-                "\n3. Cars of an entered price or less" +
-                "\n4. Only used or only new");
-            Console.Write("Enter choice here (1-4): ");
+                "\n3. Cars of an entered price or less");
+            Console.Write("Enter choice here (1-3): ");
             int input = int.Parse(Console.ReadLine());
+
+            while (input < 1 || input > 3)
+            {
+                Console.WriteLine("That is not a valid entry.");
+                Console.WriteLine("Do you want to search for \n1. Make" +
+             "\n2. Year" +
+             "\n3. Cars of an entered price or less");
+                Console.Write("Enter choice here (1-3): ");
+                input = int.Parse(Console.ReadLine());
+            }
 
             if (input == 1)
             {
@@ -98,30 +107,7 @@ namespace Lab5_3
                     }
                 }
             }
-            //else if (input == 4)
-            //{
-            //    Console.Write("Are you looking for new or used?");
-            //    string usedOrNew = Console.ReadLine();
-            //    if (usedOrNew == "used")
-            //    {
-            //        foreach (Car car in cars)
-            //        {
-            //            if (car.M)
-            //        }
-            //    }
-            //    foreach (Car car in cars)
-            //    {
-            //        if (car.Price < price)
-            //        {
-            //            Console.WriteLine(car);
-            //        }
-            //        else
-            //        {
-            //            Console.WriteLine($"There are no cars for less than {price}.");
-            //        }
 
-            //    }
-            //}
         }
     }
 }
