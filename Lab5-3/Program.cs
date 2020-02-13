@@ -23,11 +23,12 @@ namespace Lab5_3
                 "\n1. List all cars" +
                  "\n2. Buy a car" +
                  "\n3. Add a car" +
-                 "\n4. Quit");
+                 "\n4. Search" +
+                 "\n5. Quit");
                 Console.Write("Enter choice here: ");
 
                 int switchCase = InputInt();
-                while (switchCase < 1 || switchCase > 4)
+                while (switchCase < 1 || switchCase > 5)
                 {
                     Console.Write("That is not a valid input. Enter the following:" +
                         "\n1. Add a team member" +
@@ -66,6 +67,9 @@ namespace Lab5_3
                         double mileage = double.Parse(Console.ReadLine());
 
                         carlot.AddCar(make, model, year, price, mileage);
+                        break;
+                    case 4:
+                        carlot.SearchCar();
                         break;
                     default:
                         break;
