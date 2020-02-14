@@ -51,14 +51,14 @@ namespace Lab5_3
 
                         break;
                     case 3:
+                        Console.WriteLine("Let's add a car to inventory.");
+                        Console.Write("Year: ");
+                        int year = int.Parse(Console.ReadLine());
                         Console.Write("Make: ");
                         string make = Console.ReadLine();
 
                         Console.Write("Model: ");
                         string model = Console.ReadLine();
-
-                        Console.Write("Year: ");
-                        int year = int.Parse(Console.ReadLine());
 
                         Console.Write("Price: $");
                         double price = double.Parse(Console.ReadLine());
@@ -67,6 +67,8 @@ namespace Lab5_3
                         double mileage = double.Parse(Console.ReadLine());
 
                         carlot.AddCar(make, model, year, price, mileage);
+
+                        Console.WriteLine($"You have just added a {year} {make} {model} for {price.ToString("C")}");
                         break;
                     case 4:
                         carlot.SearchCar();

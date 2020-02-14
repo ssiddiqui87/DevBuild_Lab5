@@ -6,11 +6,17 @@ namespace Lab5_3
 {
     class Car
     {
-        private int id = 1000;
+        private int id;
         private string make;
         private string model;
         private int year;
         private double price;
+
+        public int Id { get => id; set => id = value; }
+        public string Make { get => make; set => make = value; }
+        public string Model { get => model; set => model = value; }
+        public int Year { get => year; set => year = value; }
+        public double Price { get => price; set => price = value; }
 
         public Car()
         {
@@ -30,17 +36,10 @@ namespace Lab5_3
             this.Year = year;
             this.Price = price;
         }
-        public int Id { get => id; set => id = value; }
-        public string Make { get => make; set => make = value; }
-        public string Model { get => model; set => model = value; }
-        public int Year { get => year; set => year = value; }
-        public double Price { get => price; set => price = value; }
-      
-
 
         public override string ToString()
         {
-            return $"ID: {id} {year} {make} {model} - ${price}";
+            return $"ID: {id} {year} {make} {model} -{price.ToString("C")}";
         }
     }
 }

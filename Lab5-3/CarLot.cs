@@ -7,7 +7,7 @@ namespace Lab5_3
     class CarLot
     {
         private List<Car> cars;
-        private int id = 1000;
+        private int id;
 
         public CarLot()
         {
@@ -32,16 +32,16 @@ namespace Lab5_3
 
         public void ListCars()
         {
+            Console.WriteLine("--------------------------------------------------------------------------");
             foreach (Car car in cars)
             {
                 Console.WriteLine(car);
+                Console.WriteLine("--------------------------------------------------------------------------");
             }
         }
 
         public void RemoveCar(int id)
         {
-
-
             for (int i = 0; i < cars.Count; i++)
             {
                 if (cars[i].Id == id)

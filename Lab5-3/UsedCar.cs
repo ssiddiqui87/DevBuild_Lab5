@@ -17,7 +17,7 @@ namespace Lab5_3
 
         public override string ToString()
         {
-            return base.ToString() + $" (Used) - Mileage: {mileage}";
+            return base.ToString() + $" (Used) - Mileage: {mileage.ToString("0,0")}";
         }
     }
 }
