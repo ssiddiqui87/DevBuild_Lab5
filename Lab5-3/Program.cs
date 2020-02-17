@@ -19,7 +19,7 @@ namespace Lab5_3
             bool flag = true;
             while (flag == true)
             {
-                Console.WriteLine("What would you like to do? " +
+                Console.WriteLine("\nWhat would you like to do? " +
                 "\n1. List all cars" +
                  "\n2. Buy a car" +
                  "\n3. Add a car" +
@@ -42,14 +42,15 @@ namespace Lab5_3
                 {
                     case 1:
                         carlot.ListCars();
-                        break;
+                        continue;
+
                     case 2:
                         carlot.ListCars();
                         Console.Write("Enter the ID of the car you would like to buy: ");
                         int id = InputInt();
                         carlot.RemoveCar(id);
+                        continue;
 
-                        break;
                     case 3:
                         Console.WriteLine("Let's add a car to inventory.");
                         Console.Write("Year: ");
@@ -69,16 +70,19 @@ namespace Lab5_3
                         carlot.AddCar(make, model, year, price, mileage);
 
                         Console.WriteLine($"You have just added a {year} {make} {model} for {price.ToString("C")}");
-                        break;
+                        continue;
+
                     case 4:
                         carlot.SearchCar();
-                        break;
+                        continue;
+
                     default:
+                        flag = false;
                         break;
 
                 }
-
-                flag = RunAgainBool("Do you want to continue? y/n: ");
+                Console.WriteLine("Thank you for shopping at Laura and Sameer's car lot!");
+               // flag = RunAgainBool("Do you want to continue? y/n: ");
             }
         }
 
@@ -89,7 +93,7 @@ namespace Lab5_3
             bool isValid = int.TryParse(Console.ReadLine(), out int userInput);
             while (!isValid)
             {
-                Console.Write("That is not a valid entry. Please enter an integer: ");
+                Console.Write("That is not a valid entry. Please enter your choice 1-5: ");
                 isValid = int.TryParse(Console.ReadLine(), out userInput);
             }
 

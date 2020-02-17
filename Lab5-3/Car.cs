@@ -39,7 +39,7 @@ namespace Lab5_3
 
         public override string ToString()
         {
-            return $"ID: {id} {year} {make} {model} -{price.ToString("C")}";
+            return $"ID: {id} | {year} {make} {model} - {price.ToString("C")}";
         }
     }
 }
